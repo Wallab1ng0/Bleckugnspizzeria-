@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Oss - Pizzeria Napoli</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">Pizzeria Napoli</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="meny.html">Meny</a></li>
+                    <li><a href="om-oss.html" class="active">Om Oss</a></li> <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+        </div>
+    </header>
+
+    <main class="container section">
+        <div class="split-layout">
+            <div class="split-content">
+                <h2>Vår Historia</h2>
+                <p>Vi startade Napoli med en dröm om den perfekta degen. Vi importerar mjöl och tomater direkt från Italien och låter degen jäsa i 48 timmar.</p>
+            </div>
+            <div class="split-image">
+                <img src="https://images.unsplash.com/photo-1556910103-1c02745a30bf?w=800" alt="Kockar">
+            </div>
+        </div>
+    </main>
+
+    <footer><p>© 2024 Pizzeria Napoli</p></footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
